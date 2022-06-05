@@ -41,9 +41,7 @@ export class CharactersComponent implements OnInit {
     // this.charactersService
     //   .getAllCharacters()
     //   .pipe(take(1))
-    //   .subscribe((res: any) => {
-    //     this.characters = res.results;
-    //     //console.log('##ABEL## >> AppComponent >>  res', res.results);
+     //console.log('##ABEL## >> AppComponent >>  res', res.results);
 
 
 
