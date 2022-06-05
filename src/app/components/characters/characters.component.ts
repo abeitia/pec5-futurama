@@ -45,10 +45,7 @@ export class CharactersComponent implements OnInit {
     //     this.characters = res.results;
     //     //console.log('##ABEL## >> AppComponent >>  res', res.results);
 
-    //     this.dataSource = new MatTableDataSource<Character>(this.characters);
-    //     this.dataSource.paginator = this.paginator;
-    //     this.dataSource.sort = this.sort;
-    //   });
+
 
 //
   this.charactersService
