@@ -32,7 +32,6 @@ export class CharacterComponent implements OnInit {
 
   ngOnInit(): void {
     const identifier = this.activatedRoute.snapshot.paramMap.get('id');
-    //console.log('Identifier --> ', identifier);
 
     if (identifier) {
       this.charactersService
@@ -42,10 +41,10 @@ export class CharacterComponent implements OnInit {
             return this.router.navigateByUrl('/');
           } else {
             this.character = character;
-            this.quotesList = character.sayings.map((quote) => ({ text: quote }));
-           // console.log(this.quotesList);
+            this.quotesList = character.sayings.map((quote) => ({
+              text: quote,
+            }));
             this.dataSource = new MatTableDataSource<Quote>(this.quotesList);
-
             this.dataSource.paginator = this.paginator;
             this.dataSource.sort = this.sort;
           }

@@ -1,18 +1,9 @@
 <div class="container">
   <h1>Futurama Characters</h1>
-  <!-- <ul class="list-group">
-    <a *ngFor="let character of characters"
-      [routerLink]="['/character', character.id]"
-      class="list-group-item list-group-item-action animate__animated animate__bounce animate__fadeIn">
-        {{character.id}} - {{character.name}}
-    </a>
-  </ul> -->
+
 
 <div class="mat-elevation-z8">
-  <!-- <mat-form-field appearance="standard">
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Filter" #input />
-  </mat-form-field> -->
+
 
   <table mat-table [dataSource]="dataSource" matSort>
     <!--ID Column -->
@@ -47,15 +38,10 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 
-    <!-- Row shown when there is no matching data. -->
-    <!-- <tr class="mat-row" *matNoDataRow>
-      <td class="mat-cell" colspan="4">
-        No data matching the filter "{{ input.value }}"
-      </td>
-    </tr> -->
+
   </table>
 
-  <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="5">
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="10">
   </mat-paginator>
 </div>
 </div>

@@ -14,7 +14,8 @@
           "/*.js"
         ],
         "urls": [
-          "https://fonts.gstatic.com/s/**", "https://fonts.gstatic.com/s/materialicons/**"
+          "https://fonts.gstatic.com/s/**",
+          "https://fonts.gstatic.com/s/materialicons/**"
         ]
       }
     },
