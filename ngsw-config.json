@@ -12,6 +12,9 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
+        ],
+        "urls": [
+          "https://fonts.gstatic.com/s/**", "https://fonts.gstatic.com/s/materialicons/**"
         ]
       }
     },
@@ -27,16 +30,20 @@
       }
     }
   ],
-"dataGroups": [
-{
-"name": "images-api",
-"urls": ["https://static.wikia.nocookie.net/enfuturama/images/**"],
-"cacheConfig": {
-    "maxSize": 10,
-    "maxAge": "1h",
-    "timeout": "1s",
-    "strategy": "freshness"
-}
-}
-]
+  "dataGroups": [
+    {
+      "name": "images-api",
+      "urls": [
+        "https://static.wikia.nocookie.net/enfuturama/images/**",
+        "https://api.sampleapis.com/futurama/characters",
+        "https://upload.wikimedia.org/wikipedia/en"
+      ],
+      "cacheConfig": {
+        "maxSize": 10,
+        "maxAge": "1h",
+        "timeout": "1s",
+        "strategy": "freshness"
+      }
+    }
+  ]
 }
