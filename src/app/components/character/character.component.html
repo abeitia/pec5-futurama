@@ -3,24 +3,26 @@
     *ngIf="character"
     class="row animate__animated animate__bounce animate__fadeIn"
   >
-    <mat-card class="mat-elevation-z4">
-      <mat-card-header>
-        <mat-card-title
-          >{{ character.name?.first }} {{ character.name?.middle }}
-          {{ character.name?.last }}</mat-card-title
-        >
-      </mat-card-header>
-      <img
-        mat-card-lg-image
-        src="{{ character.images?.main }}"
-        alt="{{ character.name?.first }} {{ character.name?.middle }} {{
-          character.name?.last
-        }}"
-      />
-    </mat-card>
+    <div class="main">
+      <mat-card class="mat-elevation-z4">
+        <mat-card-header>
+          <mat-card-title
+            >{{ character.name?.first }} {{ character.name?.middle }}
+            {{ character.name?.last }}</mat-card-title
+          >
+        </mat-card-header>
+        <img
+          mat-card-lg-image
+          src="{{ character.images?.main }}"
+          alt="{{ character.name?.first }} {{ character.name?.middle }} {{
+            character.name?.last
+          }}"
+        />
+      </mat-card>
 
-    <div class="col-md-3">
-      <button mat-raised-button color="primary" routerLink="/">Back</button>
+      <div class="col-md-3">
+        <button mat-raised-button color="primary" routerLink="/">Back</button>
+      </div>
     </div>
 
     <mat-accordion>
